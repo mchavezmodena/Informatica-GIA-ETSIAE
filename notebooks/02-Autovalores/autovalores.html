@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>3. Cálculo de Autovalores &#8212; Curso de Informática ETSIAE</title>
+    <title>2. Métodos para el Cálculo de Autovalores &#8212; Curso de Informática ETSIAE</title>
   
   
   
@@ -19,55 +19,56 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/autovalores';</script>
-    <link rel="shortcut icon" href="../_static/favicon.png"/>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="2. Sistemas Lineales" href="sistemas_lineales.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/02-Autovalores/autovalores';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3. Interpolación de Lagrange" href="../03-Interpolacion/interpolacion_lagrange.html" />
+    <link rel="prev" title="1. Sistemas lineales" href="../01-SistemasLineales/sistemas_lineales.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -95,7 +96,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="../search.html"
+      action="../../search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -133,7 +134,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="../intro.html">
+<a class="navbar-brand logo" href="../../intro.html">
   
   
   
@@ -143,8 +144,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -153,15 +154,25 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../intro.html">
+                <a class="reference internal" href="../../intro.html">
                     Curso de Informática
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Introducci%C3%B3nEDOs.html">1. Ecuaciones diferenciales ordinarias</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sistemas_lineales.html">2. Sistemas Lineales</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Cálculo de Autovalores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01-SistemasLineales/sistemas_lineales.html">1. Sistemas lineales</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Métodos para el Cálculo de Autovalores</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../03-Interpolacion/interpolacion_lagrange.html">3. Interpolación de Lagrange</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03-Interpolacion/practica_minimos_cuadrados.html">3.1. Práctica: método de mínimos cuadrados</a></li>
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../04-DerivacionIntegracion/derivacion_numerica.html">4. Derivación Numérica.</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../04-DerivacionIntegracion/practica_pde.html">4.5. Práctica Grupal: Problemas de Contorno</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../05-SistemasNoLineales/Introducci%C3%B3nEDOs.html">5. Sistemas No Lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06-EDOs/Introducci%C3%B3nEDOs.html">6. Ecuaciones diferenciales ordinarias</a></li>
 </ul>
 
     </div>
@@ -233,7 +244,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/RayleighLord/ProgrammingETSIAE/issues/new?title=Issue%20on%20page%20%2Fnotebooks/autovalores.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/RayleighLord/ProgrammingETSIAE/issues/new?title=Issue%20on%20page%20%2Fnotebooks/02-Autovalores/autovalores.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -263,7 +274,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/notebooks/autovalores.ipynb" target="_blank"
+      <li><a href="../../_sources/notebooks/02-Autovalores/autovalores.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -345,7 +356,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Cálculo de Autovalores</h1>
+    <h1>Métodos para el Cálculo de Autovalores</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -355,24 +366,25 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-iterativos-para-el-calculo-de-un-autovector">3.1. Métodos iterativos para el cálculo de un autovector.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia">3.1.1. Método de la potencia.</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#criterio-de-convergencia">3.1.1.1. Criterio de Convergencia.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido">2.1. Contenido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-iterativos-para-el-calculo-de-un-autovector">2.2. Métodos iterativos para el cálculo de un autovector.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia">2.2.1. Método de la potencia.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#criterio-de-convergencia">2.2.1.1. Criterio de Convergencia.</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia-inversa-shift-invert">3.1.2. Método de la potencia inversa. (shift &amp; invert)</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia-inversa-con-i-shift-i">3.1.2.1. Método de la potencia inversa con <i> shift</i>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia-inversa-shift-invert">2.2.2. Método de la potencia inversa. (shift &amp; invert)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia-inversa-con-i-shift-i">2.2.2.1. Método de la potencia inversa con <i> shift</i>.</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-para-el-calculo-del-espectro-completo-de-autovalores">3.2. Métodos para el cálculo del espectro completo de autovalores.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">3.2.1. Introducción.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descomposicion-qr-i-qr-decomposition-i">3.2.2. Descomposición QR.  <i> QR-decomposition</i>.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-para-el-calculo-del-espectro-completo-de-autovalores">2.3. Métodos para el cálculo del espectro completo de autovalores.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">2.4. Introducción.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descomposicion-qr-i-qr-decomposition-i">2.4.1. Descomposición QR.  <i> QR-decomposition</i>.</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-iteracion-simultanea-i-simultaneous-iteration-i">3.3. Método de la Iteración Simultánea.  <i> Simultaneous Iteration</i>.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritmo-qr-para-el-calculo-del-espectro-completo">3.4. Algoritmo QR para el cálculo del espectro completo.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-iteracion-simultanea-i-simultaneous-iteration-i">2.5. Método de la Iteración Simultánea.  <i> Simultaneous Iteration</i>.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritmo-qr-para-el-calculo-del-espectro-completo">2.6. Algoritmo QR para el cálculo del espectro completo.</a></li>
 </ul>
             </nav>
         </div>
@@ -384,9 +396,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="calculo-de-autovalores">
-<h1><span class="section-number">3. </span>Cálculo de Autovalores<a class="headerlink" href="#calculo-de-autovalores" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="metodos-para-el-calculo-de-autovalores">
+<h1><span class="section-number">2. </span>Métodos para el Cálculo de Autovalores<a class="headerlink" href="#metodos-para-el-calculo-de-autovalores" title="Permalink to this heading">#</a></h1>
+<section id="contenido">
+<h2><span class="section-number">2.1. </span>Contenido<a class="headerlink" href="#contenido" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><span class="xref myst">Semana 1</span>: Métodos iterativos para el cálculo de autovectores dominantes.</p></li>
+</ul>
 <ul>
+<li>Método de la potencia.</li>
+<li>Método de la potencia inversa (shift & invert).</li>
+</ul>
+* [Semana 2](#Full): Métodos para el cálculo del espectro completo de autovalores.<ul>
 <li> Empezamos importando los módulos necesarios y definiendo la matriz de la que queremos calcular los autovalores.
 </ul><div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -414,8 +435,10 @@ document.write(`
 </div>
 </div>
 </div>
+<p><a id='Single'></a></p>
+</section>
 <section id="metodos-iterativos-para-el-calculo-de-un-autovector">
-<h2><span class="section-number">3.1. </span>Métodos iterativos para el cálculo de un autovector.<a class="headerlink" href="#metodos-iterativos-para-el-calculo-de-un-autovector" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">2.2. </span>Métodos iterativos para el cálculo de un autovector.<a class="headerlink" href="#metodos-iterativos-para-el-calculo-de-un-autovector" title="Permalink to this heading">#</a></h2>
 <p>Vamos a hacer una serie de suposiciones necesarias para garantizar que estos métodos funcionan adecuadamente.
 En primer lugar consideramos una matriz <span class="math notranslate nohighlight">\(A \in \mathbb M_{n \times n}(\mathbb R)\)</span> no singular, cuadrada, formada por coeficientes reales y <a href="https://es.wikipedia.org/wiki/Matriz_diagonalizable">diagonalizable</a>.</p>
 <p>En segundo lugar vamos a considerar que los autovalores cumplen:</p>
@@ -424,7 +447,7 @@ En primer lugar consideramos una matriz <span class="math notranslate nohighligh
 <p>Es decir, que tenemos un autovalor <span class="math notranslate nohighlight">\(\lambda_1\)</span> que llamaremos dominante, que es mayor en valor absoluto que el resto. Además vamos a considerar que la multiplicidad geométrica (no solo la <a href="https://aga.frba.utn.edu.ar/multiplicidades-algebraica-y-geometrica-de-un-autovalor/">algebraica</a>) es uno. Eso implica que sólo tiene asociado un autovector, que llamaremos autovector dominante.</p>
 <p>Bajo estas condiciones, para calcular el <span class="math notranslate nohighlight">\(\textbf{autopar}\)</span> (autovalor y autovector asociado) podemos utilizar el método de la potencia.</p>
 <section id="metodo-de-la-potencia">
-<h3><span class="section-number">3.1.1. </span>Método de la potencia.<a class="headerlink" href="#metodo-de-la-potencia" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">2.2.1. </span>Método de la potencia.<a class="headerlink" href="#metodo-de-la-potencia" title="Permalink to this heading">#</a></h3>
 <p>Sea <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb R^n\)</span>, entonces, por ser <span class="math notranslate nohighlight">\(A\)</span> diagonalizable, existe una base del espacio vectorial <span class="math notranslate nohighlight">\(\mathbb R^n\)</span> formada por autovectores de <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B_v = \{\vec{v}_1, \vec{v}_2, \vec{v}_3, \dots, \vec{v}_n \}\)</span> con <span class="math notranslate nohighlight">\(A \vec{v}_i = \lambda_i \vec{v}_i\)</span>, de modo que:</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{x} = c_1\vec{v}_1 + c_2\vec{v}_2 + \dots + c_n\vec{v}_n\]</div>
@@ -474,8 +497,8 @@ Este resultado teórico tiene algunos inconvenientes a la hora de implementarlo 
 </div>
 </div>
 <p>Pongamos un ejemplo sencillo para ver como funciona.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-30320ed5-9212-40fe-aca6-b27c39239364">
-<span class="eqno">(3.1)<a class="headerlink" href="#equation-30320ed5-9212-40fe-aca6-b27c39239364" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-df2fc8df-7a8c-4666-b208-f28b53a6246b">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-df2fc8df-7a8c-4666-b208-f28b53a6246b" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 1 &amp; 1 &amp; 2\\
@@ -508,20 +531,20 @@ Lo podemos comprobar mediante la funcion <i> eigvals()</i> del módulo <i>scipy.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor dominante: 2.744826077681914, autovector: [0.78579649 0.34661858 0.51222986]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor dominante: 2.7448260776819136, autovector: [0.78579653 0.3466186  0.51222979]
 </pre></div>
 </div>
 </div>
 </div>
 <section id="criterio-de-convergencia">
-<h4><span class="section-number">3.1.1.1. </span>Criterio de Convergencia.<a class="headerlink" href="#criterio-de-convergencia" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">2.2.1.1. </span>Criterio de Convergencia.<a class="headerlink" href="#criterio-de-convergencia" title="Permalink to this heading">#</a></h4>
 <p>El criterio de parada escogido en la implementación inicial ha sido:
 $<span class="math notranslate nohighlight">\(||\mathbf{x}^j-\mathbf{x}^{j-1}|| \lt \varepsilon\)</span>$</p>
 <p>Es decir que el módulo de la diferencia entre dos aproximaciones consecutivas del autovector sea menor que un valor pequeño <span class="math notranslate nohighlight">\(\varepsilon\)</span>.</p>
 <p>Este criterio da problemas si el autovalor dominante es negativo. En cada iteración el vector cambiará de sentido (manteniendo la dirección) lo que hará que no se cumpla el criterio de convergencia.
 Para comprobarlo basta que cambies el signo del elemento <span class="math notranslate nohighlight">\(A_{1,1}\)</span>.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e1416455-fb25-429d-8589-edd07c520da9">
-<span class="eqno">(3.2)<a class="headerlink" href="#equation-e1416455-fb25-429d-8589-edd07c520da9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8e362bc8-64f5-4b2c-bc52-984892254c8f">
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-8e362bc8-64f5-4b2c-bc52-984892254c8f" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 -1 &amp; 1 &amp; 2\\
@@ -584,7 +607,7 @@ El vector obtenido es el mismo, simplemente cambia el signo, pero el criterio de
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor dominante: -2.9999659761183115, autovector: [-0.70571583  0.00196295  0.70849229]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor dominante: -2.9999720482460517, autovector: [-7.05360450e-01  4.58201068e-04  7.08848662e-01]
 </pre></div>
 </div>
 </div>
@@ -592,7 +615,7 @@ El vector obtenido es el mismo, simplemente cambia el signo, pero el criterio de
 </section>
 </section>
 <section id="metodo-de-la-potencia-inversa-shift-invert">
-<h3><span class="section-number">3.1.2. </span>Método de la potencia inversa. (shift &amp; invert)<a class="headerlink" href="#metodo-de-la-potencia-inversa-shift-invert" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">2.2.2. </span>Método de la potencia inversa. (shift &amp; invert)<a class="headerlink" href="#metodo-de-la-potencia-inversa-shift-invert" title="Permalink to this heading">#</a></h3>
 <p>Una pequeña variación del método de la potencia nos va a servir para calcular el autovalor más proximo a cero en valor absoluto y su autovector asociado. Para ello basta recordar de Algebra Lineal que si <span class="math notranslate nohighlight">\( \lambda \)</span> es un autovalor de la matriz <span class="math notranslate nohighlight">\( A \)</span> entonces <span class="math notranslate nohighlight">\( \dfrac{1}{\lambda} \)</span> es autovalor de la inversa <span class="math notranslate nohighlight">\( A^{-1} \)</span>. Veamoslo:</p>
 <p>Sea <span class="math notranslate nohighlight">\( A \in \mathbb M_{n \times n}(\mathbb R) \)</span> matriz cuadrada, no singular de números reales y sean: <span class="math notranslate nohighlight">\( \left( \lambda, \vec{v} \right) \)</span> un par autovalor-autovector de dicha matriz. Entonces:</p>
 <div class="math notranslate nohighlight">
@@ -645,13 +668,13 @@ A\vec{v} = \lambda \vec{v} \rightarrow A^{-1}A\vec{v} = \lambda A^{-1}\vec{v} \r
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor más próximo a 0: -1.3959564452702746, autovector asociado: [ 0.46081659 -0.88079425 -0.10885574]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor más próximo a 0: -1.3959693914691231, autovector asociado: [-0.46431745  0.87750038  0.12000995]
 </pre></div>
 </div>
 </div>
 </div>
 <section id="metodo-de-la-potencia-inversa-con-i-shift-i">
-<h4><span class="section-number">3.1.2.1. </span>Método de la potencia inversa con <i> shift</i>.<a class="headerlink" href="#metodo-de-la-potencia-inversa-con-i-shift-i" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">2.2.2.1. </span>Método de la potencia inversa con <i> shift</i>.<a class="headerlink" href="#metodo-de-la-potencia-inversa-con-i-shift-i" title="Permalink to this heading">#</a></h4>
 <p>Una vez que hemos usado la potencia sobre la matriz inversa para calcular el autovalor más proximo a cero podemos modificarlo para calcular el autovalor más próximo a un valor dado.
 Basta comprobar que si <span class="math notranslate nohighlight">\(\mu\)</span> es un autovalor de <span class="math notranslate nohighlight">\(A\)</span> y <span class="math notranslate nohighlight">\(\vec{v}\)</span> su autovector asociado, entonces la matriz <span class="math notranslate nohighlight">\(A-\alpha I\)</span> tiene como autovalor <span class="math notranslate nohighlight">\(\mu-\alpha\)</span> asociado al mismo autovector <span class="math notranslate nohighlight">\(\vec{v}\)</span>.
 $<span class="math notranslate nohighlight">\(   \left( A-\alpha I\right )\vec{v}= A\vec{v}-\alpha \vec{v} =\mu \vec{v} -\alpha \vec{v} = \left( \mu-\alpha \right)\vec{v}\)</span>$</p>
@@ -697,18 +720,20 @@ $<span class="math notranslate nohighlight">\(   \left( A-\alpha I\right )\vec{v
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor más próximo a -2: -2.3488718358651144, autovector asociado: [-0.41312322 -0.32218515  0.8517781 ]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor más próximo a -2: -2.3488669272581397, autovector asociado: [-0.41335566 -0.32174013  0.85183354]
 </pre></div>
 </div>
 </div>
 </div>
+<p><a id='Full'></a></p>
 </section>
 </section>
 </section>
 <section id="metodos-para-el-calculo-del-espectro-completo-de-autovalores">
-<h2><span class="section-number">3.2. </span>Métodos para el cálculo del espectro completo de autovalores.<a class="headerlink" href="#metodos-para-el-calculo-del-espectro-completo-de-autovalores" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">2.3. </span>Métodos para el cálculo del espectro completo de autovalores.<a class="headerlink" href="#metodos-para-el-calculo-del-espectro-completo-de-autovalores" title="Permalink to this heading">#</a></h2>
+</section>
 <section id="introduccion">
-<h3><span class="section-number">3.2.1. </span>Introducción.<a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h3>
+<h2><span class="section-number">2.4. </span>Introducción.<a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h2>
 <p>Vamos a centrarnos unicamente en el cálculo del espectro para <strong>matrices reales, simétricas y con autovalores distintos</strong>. Aunque parece una restricción muy fuerte existen numerosos problemas interesantes con esas características. Por ejemplo el PCA <em>Principal Component Analysis</em>, utilizado en problemas de reducción de dimensionalidad para compresión de información o reconocimiento de imágenes, precisa el calculo del espectro completo de la matriz de covarianza de un conjunto de datos siendo dicha matriz simétrica y definida positiva.</p>
 <p>La simetría de la matriz nos permite asegurar que los autovalores van a ser reales. Además, al pedir que esos autovalores sean distintos entre sí podemos garantizar que los autovectores asociados sean ortogonales entre si.</p>
 <p>Podemos demostrar esto último facilmente:
@@ -727,9 +752,8 @@ Operando podemos comprobar que si <span class="math notranslate nohighlight">\(A
 <p>Como <span class="math notranslate nohighlight">\(\lambda \ne \beta\)</span> para que se cumpla es necesario que <span class="math notranslate nohighlight">\(\left&lt;\vec{x},\vec{y}\right&gt; = 0\)</span>. Es decir que <span class="math notranslate nohighlight">\(\vec{x}\)</span> e <span class="math notranslate nohighlight">\(\vec{y}\)</span> sean ortogonales entre si.</p>
 <p>En ese contexto intentaremos extender el método de la potencia para calcular el espectro completo de la matriz. Y veremos que podemos extender el método de la potencia de modo inteligente en este caso sencillo como hace el método de <em>Iteración Simultanea</em>. E iremos un paso más allá, aprovechando la idea que nos da la <em>Iteración Simultánea</em> para explicar uno de los métodos más utilizado para el cálculo del espectro completo, el algoritmo <em>QR</em>. Este algoritmo es equivalente a la <em>Iteración Simultánea</em> para matrices reales, simétricas con autovalores diferentes pero se puede utilizar también para el cálculo de autovalores y autovectores de matrices no simétricas o complejas. En cualquier caso estas variaciones van mucho más allá de los objetivos de este curso donde solo se pretende mostrar las versiones más sencillas de los algoritmos.</p>
 <p>Antes de entrar en los métodos de cálculo de autovalores nos vamos a detener en una herramienta que va a ser de gran utilidad: la factorización <em>QR</em> de una matriz.</p>
-</section>
 <section id="descomposicion-qr-i-qr-decomposition-i">
-<h3><span class="section-number">3.2.2. </span>Descomposición QR.  <i> QR-decomposition</i>.<a class="headerlink" href="#descomposicion-qr-i-qr-decomposition-i" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">2.4.1. </span>Descomposición QR.  <i> QR-decomposition</i>.<a class="headerlink" href="#descomposicion-qr-i-qr-decomposition-i" title="Permalink to this heading">#</a></h3>
 <p>La descomposición <em>QR</em> de una matriz <span class="math notranslate nohighlight">\(A \in \mathbb M_{n \times n}(\mathbb R)\)</span>  es una factorización de la forma:
 $<span class="math notranslate nohighlight">\(A = QR\)</span><span class="math notranslate nohighlight">\(
 donde \)</span>Q<span class="math notranslate nohighlight">\( es una matriz ortogonal y \)</span>R<span class="math notranslate nohighlight">\( una matriz triangular superior. 
@@ -755,8 +779,8 @@ Existen diferentes maneras de calcular la descomposición <em>QR</em> de una mat
 <img src="attachment:b06574cd-c591-444c-b0d4-56dadf84f539.png" width="300"/>
 </div>
 <p>Si partimos de las columnas de la matriz <span class="math notranslate nohighlight">\(A\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4672b506-e4fb-48fb-9422-f5efbeaab73b">
-<span class="eqno">(3.3)<a class="headerlink" href="#equation-4672b506-e4fb-48fb-9422-f5efbeaab73b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-934ca23e-9581-49c0-8343-a3902adf23be">
+<span class="eqno">(2.3)<a class="headerlink" href="#equation-934ca23e-9581-49c0-8343-a3902adf23be" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 \vdots &amp; \vdots&amp; \vdots &amp; \vdots\\
@@ -783,8 +807,8 @@ a_1 &amp; a_2 &amp;\dots &amp; a_n\\
 &amp;\vec{a}_n = \left&lt;\vec{a}_n,\vec{e}_1\right&gt;\vec{e}_1 +  \left&lt;\vec{a}_n,\vec{e}_2\right&gt;\vec{e}_2  + \dots +  \left&lt;\vec{a}_n,\vec{e}_n\right&gt;\vec{e}_n\\
 \end{align*}\]</div>
 <p>Que matricialmente:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-992c6964-9cc6-4595-ad8c-288ee7c76d3f">
-<span class="eqno">(3.4)<a class="headerlink" href="#equation-992c6964-9cc6-4595-ad8c-288ee7c76d3f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-58756d91-29c0-461d-aceb-914c8c2fcf57">
+<span class="eqno">(2.4)<a class="headerlink" href="#equation-58756d91-29c0-461d-aceb-914c8c2fcf57" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
   &amp;  &amp;   &amp;  \\
@@ -862,7 +886,7 @@ R=
 QR = 
  --  ------------  --
  1  -1            -2
- 4   8.63507e-17   3
+ 4   1.23358e-17   3
 -1   1             1
 --  ------------  --
 </pre></div>
@@ -881,11 +905,11 @@ QR =
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q= 
- ---------  ---------  --------
--0.235702   0.666667  0.707107
--0.942809  -0.333333  0
- 0.235702  -0.666667  0.707107
----------  ---------  --------
+ ---------  ---------  ------------
+-0.235702   0.666667   0.707107
+-0.942809  -0.333333  -3.83424e-17
+ 0.235702  -0.666667   0.707107
+---------  ---------  ------------
 R= 
  --------  ---------  ---------
 -4.24264   0.471405  -2.12132
@@ -905,14 +929,14 @@ QR =
 </section>
 </section>
 <section id="metodo-de-la-iteracion-simultanea-i-simultaneous-iteration-i">
-<h2><span class="section-number">3.3. </span>Método de la Iteración Simultánea.  <i> Simultaneous Iteration</i>.<a class="headerlink" href="#metodo-de-la-iteracion-simultanea-i-simultaneous-iteration-i" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">2.5. </span>Método de la Iteración Simultánea.  <i> Simultaneous Iteration</i>.<a class="headerlink" href="#metodo-de-la-iteracion-simultanea-i-simultaneous-iteration-i" title="Permalink to this heading">#</a></h2>
 <p>Como hemos dicho antes nos vamos a centrar en el cálculo de autovalores y autovectores de matrices reales, simétricas y con autovalores distintos.
 El primer método que vamos a ver es el de la <em>Iteración Simultánea</em> que es una extensión inteligente de los métodos de la potencia a este caso particular.</p>
 <p>Los métodos de la potencia nos permiten calcular un único autovalor-autovector cada vez. Si aplicamos el método de la potencia a un conjunto de vectores linealmente independientes entre sí: <span class="math notranslate nohighlight">\( V = \{\vec{v}_1, \vec{v}_2, \vec{v}_3, \dots, \vec{v}_n \} \)</span>, despues de suficientes iteraciones, todos los vectores <span class="math notranslate nohighlight">\( \{ A^{k}\vec{v}_i \} \)</span> habrán convergido al autovector dominante. ¿Hay algún modo de que cada vector converja en un autovector diferente?.</p>
 <p>Ahora es cuando entra en juego la descomposición <em>QR</em> y el hecho de que la matriz <span class="math notranslate nohighlight">\( A \)</span> sea simétrica. Recordemos que la simetría nos garantiza que todos los autovalores son reales y, la suposición extra de que los autovalores sean diferentes, nos asegura la ortogonalidad de los autovectores asociados. Si queremos encontrar la base de autovectores ortogonales, en cada paso del método de la potencia, debemos ortogonalizar (ortonormalizar) el conjunto de vectores <span class="math notranslate nohighlight">\( \{ A\vec{v}_i \} \)</span>. De esta manera forzamos que las aproximaciones sean ortonormales entre si.</p>
 <p>El algoritmo es sencillo y se puede escribir en pocas líneas:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-50d05f2a-dd53-47af-8c9b-07c72136506a">
-<span class="eqno">(3.5)<a class="headerlink" href="#equation-50d05f2a-dd53-47af-8c9b-07c72136506a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1a23d195-1dd9-4148-aecb-5834315fddbf">
+<span class="eqno">(2.5)<a class="headerlink" href="#equation-1a23d195-1dd9-4148-aecb-5834315fddbf" title="Permalink to this equation">#</a></span>\[\begin{align}
 &amp;\text{Escoger una base de }\mathbb R^n \text{  y almacenarla como matriz   }Q^0.   \text{ Por ejemplo: } \quad Q^0 = I.\\
 &amp;\text{Bucle hasta convergencia o número máximo de iteraciones} \\
 &amp;\quad\quad Z = AQ^{k-1}\\
@@ -1003,7 +1027,7 @@ Autovector 2: [-0.58095343 -0.74087535  0.3370413 ]
 <p>Recuerda que si <span class="math notranslate nohighlight">\(\vec{v}\)</span> es un autovector asociado a <span class="math notranslate nohighlight">\(\lambda\)</span> también lo es <span class="math notranslate nohighlight">\(-\vec{v}\)</span>. <span class="math notranslate nohighlight">\(A(-\vec{v}) = -A\vec{v}= -\lambda \vec{v} = \lambda (-\vec{v})\)</span></p>
 </section>
 <section id="algoritmo-qr-para-el-calculo-del-espectro-completo">
-<h2><span class="section-number">3.4. </span>Algoritmo QR para el cálculo del espectro completo.<a class="headerlink" href="#algoritmo-qr-para-el-calculo-del-espectro-completo" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">2.6. </span>Algoritmo QR para el cálculo del espectro completo.<a class="headerlink" href="#algoritmo-qr-para-el-calculo-del-espectro-completo" title="Permalink to this heading">#</a></h2>
 <p>Empezaremos con algunas generalidades del algoritmo y proposiones algebráicas teóricas que nos van a permitir situar el <em>algoritmo QR</em> dentro de un contexto más general. Es decir, aunque nosotros nos vamos a centrar en una matriz con ciertas restricciones, el algoritmo QR es aplicable para un rango de matrices mucho más extenso: no simetricas, con multiplicidad algebraica de los autovalores e incluso con valores complejos.</p>
 <ul>
     <li>
@@ -1016,7 +1040,7 @@ Autovector 2: [-0.58095343 -0.74087535  0.3370413 ]
         <i>Proposición 1</i>:
      </li>
 </ul>
-&nbsp;&nbsp;&nbsp;&nbsp;$A$ y $B \in \mathbb{R}^{n\times n}$ son semejantes si $\exists P \in \mathbb{R}^{n\times n}$ no singular, tal que $B = P^{-1}AP$.
+&nbsp;&nbsp;&nbsp;&nbsp; $A$ y $B \in \mathbb{R}^{n\times n}$ son semejantes si $\exists P \in \mathbb{R}^{n\times n}$ no singular, tal que $B = P^{-1}AP$.
 Es decir un cambio de base preserva los autovalores. (¡Ojo, los autovectores no!)
 <ul>
     <li>
@@ -1041,13 +1065,13 @@ Es decir un cambio de base preserva los autovalores. (¡Ojo, los autovectores no
         <i>Proposición 3</i>:
      </li>
 </ul>
-&nbsp;&nbsp;&nbsp;&nbsp;Toda matriz cuadrada  $A \in \mathbb{C}^{n\times n}$ se puede escribir como $A = HTH^{-1}$ donde $H$ es una matriz unitaria y $T$ es una matriz *quasi-triangular*.
-Si $A \in \mathbb{R}^{n\times n}$ entonces la factorización se convierte en $A = QTQ^{-1}$ con $Q$ matriz ortogonal. En ambos casos a esta factorización se la conoce como **descomposición de Schur** o *Schur decomposition*.
+<p>Toda matriz cuadrada  <span class="math notranslate nohighlight">\(A \in \mathbb{C}^{n\times n}\)</span> se puede escribir como <span class="math notranslate nohighlight">\(A = HTH^{-1}\)</span> donde <span class="math notranslate nohighlight">\(H\)</span> es una matriz unitaria y <span class="math notranslate nohighlight">\(T\)</span> es una matriz <em>quasi-triangular</em>.
+Si <span class="math notranslate nohighlight">\(A \in \mathbb{R}^{n\times n}\)</span> entonces la factorización se convierte en <span class="math notranslate nohighlight">\(A = QTQ^{-1}\)</span> con <span class="math notranslate nohighlight">\(Q\)</span> matriz ortogonal. En ambos casos a esta factorización se la conoce como <strong>descomposición de Schur</strong> o <em>Schur decomposition</em>.</p>
 <p>Como <span class="math notranslate nohighlight">\(A\)</span> y <span class="math notranslate nohighlight">\(T\)</span> son semejantes (Proposición 1) tienen los mismos autovalores.
 Si todos los autovalores de <span class="math notranslate nohighlight">\(A\)</span> son reales la matriz <span class="math notranslate nohighlight">\(T\)</span> será triangular y los autovalores estarán en la diagonal. Si <span class="math notranslate nohighlight">\(A\)</span> posee algún autovalor complejo, en la diagonal apareceran bloques de tamaño <span class="math notranslate nohighlight">\(2x2\)</span> que contendrán los autovalores complejos conjugados.</p>
 <p>Para ilustrar esto último, aunque no sea el caso que vamos a estudiar, veamos que ocurre si particularizamos al caso de una matriz <span class="math notranslate nohighlight">\(A \in \mathbb{R}^{4x4}\)</span> con dos autovalores reales y un par de complejos conjugados, la forma de Schur será: <span class="math notranslate nohighlight">\(A = QTQ^{-1}\)</span> con,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d2498329-9bc6-41d1-9060-3bc0d431a55d">
-<span class="eqno">(3.6)<a class="headerlink" href="#equation-d2498329-9bc6-41d1-9060-3bc0d431a55d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-38e4167a-022d-4c63-b28f-b8573cecac48">
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-38e4167a-022d-4c63-b28f-b8573cecac48" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = 
 \begin{pmatrix}
 \lambda_1 &amp; t_{12} &amp; t_{13} &amp; t_{14} \\
@@ -1058,8 +1082,8 @@ T =
 \end{align}\]</div>
 <p>Y los autovalores son: <span class="math notranslate nohighlight">\(\lambda_1, \lambda_2, \lambda_{3,4}= a\pm \sqrt{cb}\)</span>.</p>
 <p>Veamos un ejemplos:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9b08ce79-1caf-494f-b68e-cf074bfc3358">
-<span class="eqno">(3.7)<a class="headerlink" href="#equation-9b08ce79-1caf-494f-b68e-cf074bfc3358" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f0437290-1e28-4251-bcd3-271d0814decf">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-f0437290-1e28-4251-bcd3-271d0814decf" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 1 &amp; 2 &amp; 0 &amp; 0 \\
@@ -1070,8 +1094,8 @@ A =
 \end{align}\]</div>
 <p>cuyos autovalores son  <span class="math notranslate nohighlight">\(\lambda_1 = 3, \lambda_2= -1, \lambda_3= 2+3i,\lambda_4= 2-3i\)</span>.
 La descomposición de Schur de la matriz es:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e141e881-e634-4d2d-8398-7b7af461f1e6">
-<span class="eqno">(3.8)<a class="headerlink" href="#equation-e141e881-e634-4d2d-8398-7b7af461f1e6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-809556fa-7fcf-47d6-a26a-1618492eea93">
+<span class="eqno">(2.8)<a class="headerlink" href="#equation-809556fa-7fcf-47d6-a26a-1618492eea93" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 1 &amp; 2 &amp; 0 &amp; 0 \\
@@ -1147,8 +1171,8 @@ Q^-1TQ =
 </div>
 </div>
 <p>Si nos centramos en el caso que vamos a ver este curso con la matriz <span class="math notranslate nohighlight">\(A\)</span> real y simétrica, la matriz <span class="math notranslate nohighlight">\(T\)</span> en la descomposición de Schur toma forma diagonal.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-334480a7-2805-4d9f-9749-b5d00bcf826b">
-<span class="eqno">(3.9)<a class="headerlink" href="#equation-334480a7-2805-4d9f-9749-b5d00bcf826b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-441c9a12-ee0a-4c02-bd42-d95f6fabad53">
+<span class="eqno">(2.9)<a class="headerlink" href="#equation-441c9a12-ee0a-4c02-bd42-d95f6fabad53" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 1 &amp; 2 &amp; 3 \\
@@ -1194,8 +1218,8 @@ A =
 Autovalores: [-1.12310563  7.12310563  5.        ]
 T= 
  --------  -----------  -----------
--1.12311  8.88178e-16  6.79962e-17
- 0        7.12311      9.90683e-16
+-1.12311  4.44089e-16  1.03256e-16
+ 0        7.12311      9.6992e-16
  0        0            5
 --------  -----------  -----------
 Q= 
@@ -1207,7 +1231,7 @@ Q=
 Q^-1TQ = 
  -  ------------  -----------
 1   2            3
-2   5            8.28753e-16
+2   5            3.66873e-16
 3  -2.18176e-16  5
 -  ------------  -----------
 </pre></div>
@@ -1215,8 +1239,8 @@ Q^-1TQ =
 </div>
 </div>
 <p>El <em>algoritmo QR</em> calcula el espectro completo de la matriz <span class="math notranslate nohighlight">\(A\)</span> encontrando una forma semejante de <span class="math notranslate nohighlight">\(A\)</span> a través de la transformación de Schur. Para ello utiliza un proceso iterativo. La idea básica es, en cada iteración, hacer una descomposición <em>QR</em> de la matriz original, construir una nueva matriz como el producto de los factores de la descomposición cambiados de orden y repetir hasta la convergencia:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1e49b38f-66fa-4ef0-9016-8d30009bfc03">
-<span class="eqno">(3.10)<a class="headerlink" href="#equation-1e49b38f-66fa-4ef0-9016-8d30009bfc03" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-92a4755f-8f8a-4c6c-83f5-45b255ea812b">
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-92a4755f-8f8a-4c6c-83f5-45b255ea812b" title="Permalink to this equation">#</a></span>\[\begin{align}
 &amp;\text{Factorizar la matriz  } A\text{:} \quad A = Q_0R_0.  \\
 &amp;\mbox{Bucle hasta convergencia o número máximo de iteraciones} \\
 &amp;\quad\quad A_k = R_{k}Q_{k}\\
@@ -1224,8 +1248,8 @@ Q^-1TQ =
 &amp;\mbox{La matriz }A_k \mbox{ converge a una matriz quasi-triangular. La matriz $T$ en forma de Schur.}
 \end{align}\]</div>
 <p>Veamos paso a paso que ocurre en este proceso iterativo:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1db3010b-1003-44b0-a34f-75c60043f490">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-1db3010b-1003-44b0-a34f-75c60043f490" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1e59d060-da71-440a-929c-950eb78a30f2">
+<span class="eqno">(2.11)<a class="headerlink" href="#equation-1e59d060-da71-440a-929c-950eb78a30f2" title="Permalink to this equation">#</a></span>\[\begin{align}
 &amp; \text{Factorización 1:} \quad Q_0R_0 = A.  \\
 &amp; A_0 = R_0Q_0 =  Q_0^{-1}Q_0R_0Q_0 = Q_0^{-1}AQ_0 \\
 &amp; \text{Factorización 2:} \quad Q_1R_1 = A_0 \\
@@ -1276,18 +1300,18 @@ Si la matriz es real y simétrica ambos algoritmos son equivalentes. El algoritm
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>T= 
- ------------  ------------  ------------
-6              7.39727e-16   7.72993e-17
-2.96439e-323  -3             7.55102e-17
-0              0            -1
-------------  ------------  ------------
+ -  ------------  ------------
+6   5.76557e-16   1.99679e-16
+0  -3             4.91798e-16
+0   0            -1
+-  ------------  ------------
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>T= 
  ------------  ------------  ------------
- 6            -5.36945e-16   4.56224e-16
--5.75762e-16  -3            -1.68306e-16
- 4.34906e-16  -1.69181e-16  -1
+ 6            -9.21538e-16   8.92486e-17
+-7.97807e-16  -3             2.61115e-17
+ 6.74891e-17  -9.28324e-17  -1
 ------------  ------------  ------------
 </pre></div>
 </div>
@@ -1365,8 +1389,8 @@ A modo ilustrativo veremos como se produce esa convergencia. Partiremos de una m
 </div>
 <p>Veamos cómo funciona con un par de ejemplos:</p>
 <p><strong>Matriz simétrica</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-1bca085b-e864-442b-bce4-d7aed5265ab4">
-<span class="eqno">(3.12)<a class="headerlink" href="#equation-1bca085b-e864-442b-bce4-d7aed5265ab4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fd58b649-0733-4b94-87e2-5c0308d84aec">
+<span class="eqno">(2.12)<a class="headerlink" href="#equation-fd58b649-0733-4b94-87e2-5c0308d84aec" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 -1 &amp; 0 &amp; 1 &amp; -1 \\
@@ -1408,8 +1432,8 @@ Autovector 4: [0.71954325 0.5384143  0.42319183 0.11522247]
 <p>Se puede ver que la matriz T en la forma de Schur <span class="math notranslate nohighlight">\(A = QTQ^T\)</span> es una matriz diagonal como era de esperar.</p>
 <p>Veamos un ejemplo no simétrico:</p>
 <p><strong>Matriz no simétrica</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-d74e6cc4-c5b4-40f4-af5e-117397ad9268">
-<span class="eqno">(3.13)<a class="headerlink" href="#equation-d74e6cc4-c5b4-40f4-af5e-117397ad9268" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-affb26ce-d1de-40b1-aadc-20c68c0dddbe">
+<span class="eqno">(2.13)<a class="headerlink" href="#equation-affb26ce-d1de-40b1-aadc-20c68c0dddbe" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 3 &amp; 2 &amp; -1 &amp; 1 \\
@@ -1490,7 +1514,7 @@ Q^-1TQ =
         },
         kernelOptions: {
             name: "python3",
-            path: "./notebooks"
+            path: "./notebooks/02-Autovalores"
         },
         predefinedOutput: true
     }
@@ -1503,18 +1527,33 @@ Q^-1TQ =
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="sistemas_lineales.html"
+       href="../01-SistemasLineales/sistemas_lineales.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Sistemas Lineales</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Sistemas lineales</p>
       </div>
     </a>
+    <a class="right-next"
+       href="../03-Interpolacion/interpolacion_lagrange.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Interpolación de Lagrange</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -1529,24 +1568,25 @@ Q^-1TQ =
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-iterativos-para-el-calculo-de-un-autovector">3.1. Métodos iterativos para el cálculo de un autovector.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia">3.1.1. Método de la potencia.</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#criterio-de-convergencia">3.1.1.1. Criterio de Convergencia.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido">2.1. Contenido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-iterativos-para-el-calculo-de-un-autovector">2.2. Métodos iterativos para el cálculo de un autovector.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia">2.2.1. Método de la potencia.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#criterio-de-convergencia">2.2.1.1. Criterio de Convergencia.</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia-inversa-shift-invert">3.1.2. Método de la potencia inversa. (shift &amp; invert)</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia-inversa-con-i-shift-i">3.1.2.1. Método de la potencia inversa con <i> shift</i>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia-inversa-shift-invert">2.2.2. Método de la potencia inversa. (shift &amp; invert)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-potencia-inversa-con-i-shift-i">2.2.2.1. Método de la potencia inversa con <i> shift</i>.</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-para-el-calculo-del-espectro-completo-de-autovalores">3.2. Métodos para el cálculo del espectro completo de autovalores.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">3.2.1. Introducción.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descomposicion-qr-i-qr-decomposition-i">3.2.2. Descomposición QR.  <i> QR-decomposition</i>.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-para-el-calculo-del-espectro-completo-de-autovalores">2.3. Métodos para el cálculo del espectro completo de autovalores.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">2.4. Introducción.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descomposicion-qr-i-qr-decomposition-i">2.4.1. Descomposición QR.  <i> QR-decomposition</i>.</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-iteracion-simultanea-i-simultaneous-iteration-i">3.3. Método de la Iteración Simultánea.  <i> Simultaneous Iteration</i>.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritmo-qr-para-el-calculo-del-espectro-completo">3.4. Algoritmo QR para el cálculo del espectro completo.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-la-iteracion-simultanea-i-simultaneous-iteration-i">2.5. Método de la Iteración Simultánea.  <i> Simultaneous Iteration</i>.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritmo-qr-para-el-calculo-del-espectro-completo">2.6. Algoritmo QR para el cálculo del espectro completo.</a></li>
 </ul>
   </nav></div>
 
@@ -1555,13 +1595,13 @@ Q^-1TQ =
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
     
 <p class="component-author">
-By Javier González Monge
+By Universidad Politécnica de Madrid
 </p>
 
   </div>
@@ -1585,7 +1625,7 @@ By Javier González Monge
     
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -1594,8 +1634,8 @@ By Javier González Monge
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
