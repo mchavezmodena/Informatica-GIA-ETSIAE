@@ -14,5 +14,5 @@ chapters:
   - file: notebooks/04-DerivacionIntegracion/derivacion_numerica.ipynb
     sections:
       - file: notebooks/04-DerivacionIntegracion/practica_pde.ipynb
-  - file: notebooks/05-SistemasNoLineales/IntroducciónEDOs.ipynb
+  - file: notebooks/05-SistemasNoLineales/Ecuaciones y sistemas de ecuaciones no lineales.ipynb
   - file: notebooks/06-EDOs/IntroducciónEDOs.ipynb
