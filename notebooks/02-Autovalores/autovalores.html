@@ -171,7 +171,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../04-DerivacionIntegracion/practica_pde.html">4.5. Práctica Grupal: Problemas de Contorno</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../05-SistemasNoLineales/Introducci%C3%B3nEDOs.html">5. Sistemas No Lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05-SistemasNoLineales/Ecuaciones%20y%20sistemas%20de%20ecuaciones%20no%20lineales.html">5. Ecuaciones no lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../06-EDOs/Introducci%C3%B3nEDOs.html">6. Ecuaciones diferenciales ordinarias</a></li>
 </ul>
 
@@ -497,8 +497,8 @@ Este resultado teórico tiene algunos inconvenientes a la hora de implementarlo 
 </div>
 </div>
 <p>Pongamos un ejemplo sencillo para ver como funciona.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-df2fc8df-7a8c-4666-b208-f28b53a6246b">
-<span class="eqno">(2.1)<a class="headerlink" href="#equation-df2fc8df-7a8c-4666-b208-f28b53a6246b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-61a047f8-dc6f-456b-bf14-98125fab2b65">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-61a047f8-dc6f-456b-bf14-98125fab2b65" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 1 &amp; 1 &amp; 2\\
@@ -531,7 +531,7 @@ Lo podemos comprobar mediante la funcion <i> eigvals()</i> del módulo <i>scipy.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor dominante: 2.7448260776819136, autovector: [0.78579653 0.3466186  0.51222979]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor dominante: 2.7448260776819144, autovector: [0.78579653 0.34661861 0.51222979]
 </pre></div>
 </div>
 </div>
@@ -543,8 +543,8 @@ $<span class="math notranslate nohighlight">\(||\mathbf{x}^j-\mathbf{x}^{j-1}|| 
 <p>Es decir que el módulo de la diferencia entre dos aproximaciones consecutivas del autovector sea menor que un valor pequeño <span class="math notranslate nohighlight">\(\varepsilon\)</span>.</p>
 <p>Este criterio da problemas si el autovalor dominante es negativo. En cada iteración el vector cambiará de sentido (manteniendo la dirección) lo que hará que no se cumpla el criterio de convergencia.
 Para comprobarlo basta que cambies el signo del elemento <span class="math notranslate nohighlight">\(A_{1,1}\)</span>.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8e362bc8-64f5-4b2c-bc52-984892254c8f">
-<span class="eqno">(2.2)<a class="headerlink" href="#equation-8e362bc8-64f5-4b2c-bc52-984892254c8f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cd45f6cc-5939-4267-a181-9905efe1ac3a">
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-cd45f6cc-5939-4267-a181-9905efe1ac3a" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 -1 &amp; 1 &amp; 2\\
@@ -607,7 +607,7 @@ El vector obtenido es el mismo, simplemente cambia el signo, pero el criterio de
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor dominante: -2.9999720482460517, autovector: [-7.05360450e-01  4.58201068e-04  7.08848662e-01]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor dominante: -2.999980775166933, autovector: [-0.7060903   0.00153895  0.70812013]
 </pre></div>
 </div>
 </div>
@@ -668,7 +668,7 @@ A\vec{v} = \lambda \vec{v} \rightarrow A^{-1}A\vec{v} = \lambda A^{-1}\vec{v} \r
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor más próximo a 0: -1.3959693914691231, autovector asociado: [-0.46431745  0.87750038  0.12000995]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor más próximo a 0: -1.3959233899530727, autovector asociado: [ 0.46256951 -0.87972667 -0.11004739]
 </pre></div>
 </div>
 </div>
@@ -720,7 +720,7 @@ $<span class="math notranslate nohighlight">\(   \left( A-\alpha I\right )\vec{v
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor más próximo a -2: -2.3488669272581397, autovector asociado: [-0.41335566 -0.32174013  0.85183354]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Autovalor más próximo a -2: -2.348858428532691, autovector asociado: [-0.41371295 -0.32105552  0.85191839]
 </pre></div>
 </div>
 </div>
@@ -779,8 +779,8 @@ Existen diferentes maneras de calcular la descomposición <em>QR</em> de una mat
 <img src="attachment:b06574cd-c591-444c-b0d4-56dadf84f539.png" width="300"/>
 </div>
 <p>Si partimos de las columnas de la matriz <span class="math notranslate nohighlight">\(A\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-934ca23e-9581-49c0-8343-a3902adf23be">
-<span class="eqno">(2.3)<a class="headerlink" href="#equation-934ca23e-9581-49c0-8343-a3902adf23be" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-463156fb-94bf-47ad-99f3-f7ae7e134e53">
+<span class="eqno">(2.3)<a class="headerlink" href="#equation-463156fb-94bf-47ad-99f3-f7ae7e134e53" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 \vdots &amp; \vdots&amp; \vdots &amp; \vdots\\
@@ -807,8 +807,8 @@ a_1 &amp; a_2 &amp;\dots &amp; a_n\\
 &amp;\vec{a}_n = \left&lt;\vec{a}_n,\vec{e}_1\right&gt;\vec{e}_1 +  \left&lt;\vec{a}_n,\vec{e}_2\right&gt;\vec{e}_2  + \dots +  \left&lt;\vec{a}_n,\vec{e}_n\right&gt;\vec{e}_n\\
 \end{align*}\]</div>
 <p>Que matricialmente:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-58756d91-29c0-461d-aceb-914c8c2fcf57">
-<span class="eqno">(2.4)<a class="headerlink" href="#equation-58756d91-29c0-461d-aceb-914c8c2fcf57" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e8c70324-f25a-4619-83fd-e2a26adb98b3">
+<span class="eqno">(2.4)<a class="headerlink" href="#equation-e8c70324-f25a-4619-83fd-e2a26adb98b3" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
   &amp;  &amp;   &amp;  \\
@@ -886,7 +886,7 @@ R=
 QR = 
  --  ------------  --
  1  -1            -2
- 4   1.23358e-17   3
+ 4   8.63507e-17   3
 -1   1             1
 --  ------------  --
 </pre></div>
@@ -905,11 +905,11 @@ QR =
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Q= 
- ---------  ---------  ------------
--0.235702   0.666667   0.707107
--0.942809  -0.333333  -3.83424e-17
- 0.235702  -0.666667   0.707107
----------  ---------  ------------
+ ---------  ---------  --------
+-0.235702   0.666667  0.707107
+-0.942809  -0.333333  0
+ 0.235702  -0.666667  0.707107
+---------  ---------  --------
 R= 
  --------  ---------  ---------
 -4.24264   0.471405  -2.12132
@@ -935,8 +935,8 @@ El primer método que vamos a ver es el de la <em>Iteración Simultánea</em> qu
 <p>Los métodos de la potencia nos permiten calcular un único autovalor-autovector cada vez. Si aplicamos el método de la potencia a un conjunto de vectores linealmente independientes entre sí: <span class="math notranslate nohighlight">\( V = \{\vec{v}_1, \vec{v}_2, \vec{v}_3, \dots, \vec{v}_n \} \)</span>, despues de suficientes iteraciones, todos los vectores <span class="math notranslate nohighlight">\( \{ A^{k}\vec{v}_i \} \)</span> habrán convergido al autovector dominante. ¿Hay algún modo de que cada vector converja en un autovector diferente?.</p>
 <p>Ahora es cuando entra en juego la descomposición <em>QR</em> y el hecho de que la matriz <span class="math notranslate nohighlight">\( A \)</span> sea simétrica. Recordemos que la simetría nos garantiza que todos los autovalores son reales y, la suposición extra de que los autovalores sean diferentes, nos asegura la ortogonalidad de los autovectores asociados. Si queremos encontrar la base de autovectores ortogonales, en cada paso del método de la potencia, debemos ortogonalizar (ortonormalizar) el conjunto de vectores <span class="math notranslate nohighlight">\( \{ A\vec{v}_i \} \)</span>. De esta manera forzamos que las aproximaciones sean ortonormales entre si.</p>
 <p>El algoritmo es sencillo y se puede escribir en pocas líneas:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1a23d195-1dd9-4148-aecb-5834315fddbf">
-<span class="eqno">(2.5)<a class="headerlink" href="#equation-1a23d195-1dd9-4148-aecb-5834315fddbf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-85b3685c-d758-4480-aeea-af5315f82a97">
+<span class="eqno">(2.5)<a class="headerlink" href="#equation-85b3685c-d758-4480-aeea-af5315f82a97" title="Permalink to this equation">#</a></span>\[\begin{align}
 &amp;\text{Escoger una base de }\mathbb R^n \text{  y almacenarla como matriz   }Q^0.   \text{ Por ejemplo: } \quad Q^0 = I.\\
 &amp;\text{Bucle hasta convergencia o número máximo de iteraciones} \\
 &amp;\quad\quad Z = AQ^{k-1}\\
@@ -1070,8 +1070,8 @@ Si <span class="math notranslate nohighlight">\(A \in \mathbb{R}^{n\times n}\)</
 <p>Como <span class="math notranslate nohighlight">\(A\)</span> y <span class="math notranslate nohighlight">\(T\)</span> son semejantes (Proposición 1) tienen los mismos autovalores.
 Si todos los autovalores de <span class="math notranslate nohighlight">\(A\)</span> son reales la matriz <span class="math notranslate nohighlight">\(T\)</span> será triangular y los autovalores estarán en la diagonal. Si <span class="math notranslate nohighlight">\(A\)</span> posee algún autovalor complejo, en la diagonal apareceran bloques de tamaño <span class="math notranslate nohighlight">\(2x2\)</span> que contendrán los autovalores complejos conjugados.</p>
 <p>Para ilustrar esto último, aunque no sea el caso que vamos a estudiar, veamos que ocurre si particularizamos al caso de una matriz <span class="math notranslate nohighlight">\(A \in \mathbb{R}^{4x4}\)</span> con dos autovalores reales y un par de complejos conjugados, la forma de Schur será: <span class="math notranslate nohighlight">\(A = QTQ^{-1}\)</span> con,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-38e4167a-022d-4c63-b28f-b8573cecac48">
-<span class="eqno">(2.6)<a class="headerlink" href="#equation-38e4167a-022d-4c63-b28f-b8573cecac48" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-379255a4-606f-420b-b074-d4ff0165ab45">
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-379255a4-606f-420b-b074-d4ff0165ab45" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = 
 \begin{pmatrix}
 \lambda_1 &amp; t_{12} &amp; t_{13} &amp; t_{14} \\
@@ -1082,8 +1082,8 @@ T =
 \end{align}\]</div>
 <p>Y los autovalores son: <span class="math notranslate nohighlight">\(\lambda_1, \lambda_2, \lambda_{3,4}= a\pm \sqrt{cb}\)</span>.</p>
 <p>Veamos un ejemplos:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f0437290-1e28-4251-bcd3-271d0814decf">
-<span class="eqno">(2.7)<a class="headerlink" href="#equation-f0437290-1e28-4251-bcd3-271d0814decf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-46b1ea5f-06d2-40ff-868b-66a542e73e4e">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-46b1ea5f-06d2-40ff-868b-66a542e73e4e" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 1 &amp; 2 &amp; 0 &amp; 0 \\
@@ -1094,8 +1094,8 @@ A =
 \end{align}\]</div>
 <p>cuyos autovalores son  <span class="math notranslate nohighlight">\(\lambda_1 = 3, \lambda_2= -1, \lambda_3= 2+3i,\lambda_4= 2-3i\)</span>.
 La descomposición de Schur de la matriz es:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-809556fa-7fcf-47d6-a26a-1618492eea93">
-<span class="eqno">(2.8)<a class="headerlink" href="#equation-809556fa-7fcf-47d6-a26a-1618492eea93" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d3de46e7-ae90-4022-bdf4-f4c84e561c5e">
+<span class="eqno">(2.8)<a class="headerlink" href="#equation-d3de46e7-ae90-4022-bdf4-f4c84e561c5e" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 1 &amp; 2 &amp; 0 &amp; 0 \\
@@ -1171,8 +1171,8 @@ Q^-1TQ =
 </div>
 </div>
 <p>Si nos centramos en el caso que vamos a ver este curso con la matriz <span class="math notranslate nohighlight">\(A\)</span> real y simétrica, la matriz <span class="math notranslate nohighlight">\(T\)</span> en la descomposición de Schur toma forma diagonal.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-441c9a12-ee0a-4c02-bd42-d95f6fabad53">
-<span class="eqno">(2.9)<a class="headerlink" href="#equation-441c9a12-ee0a-4c02-bd42-d95f6fabad53" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-82cb6fbf-8c59-4b65-be62-e2aa0dd4831d">
+<span class="eqno">(2.9)<a class="headerlink" href="#equation-82cb6fbf-8c59-4b65-be62-e2aa0dd4831d" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 1 &amp; 2 &amp; 3 \\
@@ -1218,8 +1218,8 @@ A =
 Autovalores: [-1.12310563  7.12310563  5.        ]
 T= 
  --------  -----------  -----------
--1.12311  4.44089e-16  1.03256e-16
- 0        7.12311      9.6992e-16
+-1.12311  8.88178e-16  6.79962e-17
+ 0        7.12311      9.90683e-16
  0        0            5
 --------  -----------  -----------
 Q= 
@@ -1231,7 +1231,7 @@ Q=
 Q^-1TQ = 
  -  ------------  -----------
 1   2            3
-2   5            3.66873e-16
+2   5            8.28753e-16
 3  -2.18176e-16  5
 -  ------------  -----------
 </pre></div>
@@ -1239,8 +1239,8 @@ Q^-1TQ =
 </div>
 </div>
 <p>El <em>algoritmo QR</em> calcula el espectro completo de la matriz <span class="math notranslate nohighlight">\(A\)</span> encontrando una forma semejante de <span class="math notranslate nohighlight">\(A\)</span> a través de la transformación de Schur. Para ello utiliza un proceso iterativo. La idea básica es, en cada iteración, hacer una descomposición <em>QR</em> de la matriz original, construir una nueva matriz como el producto de los factores de la descomposición cambiados de orden y repetir hasta la convergencia:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-92a4755f-8f8a-4c6c-83f5-45b255ea812b">
-<span class="eqno">(2.10)<a class="headerlink" href="#equation-92a4755f-8f8a-4c6c-83f5-45b255ea812b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-12ad7167-fc87-4142-a739-3378bb39bdb0">
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-12ad7167-fc87-4142-a739-3378bb39bdb0" title="Permalink to this equation">#</a></span>\[\begin{align}
 &amp;\text{Factorizar la matriz  } A\text{:} \quad A = Q_0R_0.  \\
 &amp;\mbox{Bucle hasta convergencia o número máximo de iteraciones} \\
 &amp;\quad\quad A_k = R_{k}Q_{k}\\
@@ -1248,8 +1248,8 @@ Q^-1TQ =
 &amp;\mbox{La matriz }A_k \mbox{ converge a una matriz quasi-triangular. La matriz $T$ en forma de Schur.}
 \end{align}\]</div>
 <p>Veamos paso a paso que ocurre en este proceso iterativo:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1e59d060-da71-440a-929c-950eb78a30f2">
-<span class="eqno">(2.11)<a class="headerlink" href="#equation-1e59d060-da71-440a-929c-950eb78a30f2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3a724a42-b7d6-4109-9644-139a94de4dcf">
+<span class="eqno">(2.11)<a class="headerlink" href="#equation-3a724a42-b7d6-4109-9644-139a94de4dcf" title="Permalink to this equation">#</a></span>\[\begin{align}
 &amp; \text{Factorización 1:} \quad Q_0R_0 = A.  \\
 &amp; A_0 = R_0Q_0 =  Q_0^{-1}Q_0R_0Q_0 = Q_0^{-1}AQ_0 \\
 &amp; \text{Factorización 2:} \quad Q_1R_1 = A_0 \\
@@ -1300,18 +1300,18 @@ Si la matriz es real y simétrica ambos algoritmos son equivalentes. El algoritm
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>T= 
- -  ------------  ------------
-6   5.76557e-16   1.99679e-16
-0  -3             4.91798e-16
-0   0            -1
--  ------------  ------------
+ ------------  ------------  ------------
+6              7.39727e-16   7.72993e-17
+2.96439e-323  -3             7.55102e-17
+0              0            -1
+------------  ------------  ------------
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>T= 
  ------------  ------------  ------------
- 6            -9.21538e-16   8.92486e-17
--7.97807e-16  -3             2.61115e-17
- 6.74891e-17  -9.28324e-17  -1
+ 6            -5.36945e-16   4.56224e-16
+-5.75762e-16  -3            -1.68306e-16
+ 4.34906e-16  -1.69181e-16  -1
 ------------  ------------  ------------
 </pre></div>
 </div>
@@ -1352,12 +1352,21 @@ A modo ilustrativo veremos como se produce esa convergencia. Partiremos de una m
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">22</span><span class="p">],</span> <span class="n">line</span> <span class="mi">5</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">22</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">):</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">Q</span><span class="p">,</span><span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">qr</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">5</span>     <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">R</span><span class="p">,</span><span class="n">Q</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">4</span>     <span class="n">Q</span><span class="p">,</span><span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">qr</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">R</span><span class="p">,</span><span class="n">Q</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="mi">10</span><span class="p">:</span> 
-<span class="g g-Whitespace">      </span><span class="mi">7</span>         <span class="n">A10</span><span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="nn">File &lt;__array_function__ internals&gt;:200,</span> in <span class="ni">qr</span><span class="nt">(*args, **kwargs)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/numpy/linalg/linalg.py:927,</span> in <span class="ni">qr</span><span class="nt">(a, mode)</span>
+<span class="g g-Whitespace">    </span><span class="mi">925</span> <span class="n">signature</span> <span class="o">=</span> <span class="s1">&#39;D-&gt;D&#39;</span> <span class="k">if</span> <span class="n">isComplexType</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;d-&gt;d&#39;</span>
+<span class="g g-Whitespace">    </span><span class="mi">926</span> <span class="n">extobj</span> <span class="o">=</span> <span class="n">get_linalg_error_extobj</span><span class="p">(</span><span class="n">_raise_linalgerror_qr</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">927</span> <span class="n">tau</span> <span class="o">=</span> <span class="n">gufunc</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">signature</span><span class="o">=</span><span class="n">signature</span><span class="p">,</span> <span class="n">extobj</span><span class="o">=</span><span class="n">extobj</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">929</span> <span class="c1"># handle modes that don&#39;t return q</span>
+<span class="g g-Whitespace">    </span><span class="mi">930</span> <span class="k">if</span> <span class="n">mode</span> <span class="o">==</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -1389,8 +1398,8 @@ A modo ilustrativo veremos como se produce esa convergencia. Partiremos de una m
 </div>
 <p>Veamos cómo funciona con un par de ejemplos:</p>
 <p><strong>Matriz simétrica</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-fd58b649-0733-4b94-87e2-5c0308d84aec">
-<span class="eqno">(2.12)<a class="headerlink" href="#equation-fd58b649-0733-4b94-87e2-5c0308d84aec" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-375cfe81-f102-4b56-b753-12c3ad504a9f">
+<span class="eqno">(2.12)<a class="headerlink" href="#equation-375cfe81-f102-4b56-b753-12c3ad504a9f" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 -1 &amp; 0 &amp; 1 &amp; -1 \\
@@ -1432,8 +1441,8 @@ Autovector 4: [0.71954325 0.5384143  0.42319183 0.11522247]
 <p>Se puede ver que la matriz T en la forma de Schur <span class="math notranslate nohighlight">\(A = QTQ^T\)</span> es una matriz diagonal como era de esperar.</p>
 <p>Veamos un ejemplo no simétrico:</p>
 <p><strong>Matriz no simétrica</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-affb26ce-d1de-40b1-aadc-20c68c0dddbe">
-<span class="eqno">(2.13)<a class="headerlink" href="#equation-affb26ce-d1de-40b1-aadc-20c68c0dddbe" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c98b7155-7143-44e4-ba6d-1af4c0c4e59d">
+<span class="eqno">(2.13)<a class="headerlink" href="#equation-c98b7155-7143-44e4-ba6d-1af4c0c4e59d" title="Permalink to this equation">#</a></span>\[\begin{align}
 A = 
 \begin{pmatrix}
 3 &amp; 2 &amp; -1 &amp; 1 \\
